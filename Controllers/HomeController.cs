@@ -63,7 +63,7 @@ namespace Modal.Controllers
                 }
 
             }
-                return RedirectToAction("Result",fizzBuzzModel);// diverting to resultAction; making "New" instance 
+                return RedirectToAction("Result", new { model = fizzBuzzModel });// diverting to resultAction; making "New" instance 
 
         }
 
